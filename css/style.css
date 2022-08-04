@@ -8,10 +8,9 @@
     text-decoration: none;
     border: none;
     font-weight: normal;
-    transition: all .2s linear;
 }
 html{
-    font-size: 62.5%;
+    font-size: 48.5%;
     overflow: hidden;
 }
 body{
@@ -20,17 +19,40 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    background: linear-gradient(black, yellow);
+    background: linear-gradient(black, rgb(89, 0, 255));
     padding: 5.5rem;
 }
+.btn{
+    font-size: 2rem;
+    padding: 2rem 4rem;
+    background: rgba(255, 255, 255, .2);
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: .2s linear;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, .5);
+    color: #555;
+}
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
 header{
-    width: 35rem;
+    width: 43rem;
     background: rgba(255, 255, 255, .2);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
     backdrop-filter: blur(.4rem);
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
+    transition: all .2s linear;
 }
 header .user{
     padding-top: 2rem;
@@ -74,4 +96,88 @@ header .navbar ul li a:hover{
     background: rgba(255, 255, 255, .5);
     color: #555;
     transition: none;
+}
+/* header section end */
+
+/* content section start */
+
+.content{
+    height: 67rem;
+    width: 120rem;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    backdrop-filter: blur(.4rem);
+    border-radius: 1rem;
+    overflow: hidden;
+
+}
+/* .bg{
+    opacity: .3;
+} */
+/* .content{
+    background: url(../imgs/img1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+.home{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    padding-bottom: 10rem;
+}
+.home h3{
+    font-size: 2.5%;
+    font-weight: lighter;
+    color: #eee;
+}
+.home .name span{
+    font-size: 4rem;
+    color: white;
+}
+.home .role {
+    padding: 1rem 0;
+}
+.home .role span{
+    font-size: 2rem;
+    color: white;
+}
+.home .share{
+    position: absolute;
+    left: 50%;
+    bottom: 5rem;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255,  .1);
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255,  .2);
+}
+.home .share a{
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255,  .2);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+.about{
+    min-height: 100%;
+}
+.about .content{
+    font-size: 2.5rem;
+    color: white;
+}
+.about .content h3 span{
+    color: white;
+}
+.about .content p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: .5rem 0;
 }

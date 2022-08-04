@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!---header section start-->
     <header>
         <div class="user">
             <img src="imgs/img1.webp">
@@ -24,17 +24,87 @@
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="home.html">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="services.html">services</a></li>
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#resume">resume</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </header>
+    <!---header section end-->
+
+    <!---content section start-->
+        <div class="content">
+            <section class="home" id="home">
+                <h3>Hi there...</h3>
+                <h3 class="name">My name is <span>SADIQ KABIR</span></h3>
+                <h3 class="role">i am a <span class="typing-text">web dev</span></h3>
+                <a href="#"><button class="btn">Hire Me</button></a>
+                <div class="share">
+                    <a href="#" class="fa fa-facebook-f"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </section>
+        
+    <!---content section end-->
+
+    <!---about section start-->
+        <section class="about" id="about">
+            <h1 class="heading">About me</h1>
+            <div class="content">
+                <h3 class="name">My name is <span>SADIQ KABIR</span></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Animi impedit veniam repellendus! Amet perferendis ipsam quas eligendi, 
+                    fugit pariatur veniam dicta culpa quidem, sit est quam cumque. Quis, ratione corrupti!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Animi impedit veniam repellendus! Amet perferendis ipsam quas eligendi, 
+                    fugit pariatur veniam dicta culpa quidem, sit est quam cumque. Quis, ratione corrupti!
+                </p>
+            </div>
+            
+            <div class="skills">
+                <div class="progress">
+                    <h3>HTML <span>95%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>CSS <span>85%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>JAVASCRIPT <span>65%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>PHP <span>50%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>MYSQL <span>50%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!---about section end-->
 
 
 
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script>
+            var type = new Typed('.typing-text',{
+                strings : ['web designer', 'web developer', 'web designer',],
+                typeSpeed : 120,
+                loop:true
+            });
+        </script>
 </body>
 </html>
